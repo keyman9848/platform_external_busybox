@@ -34,6 +34,8 @@
 #include "libbb.h"
 #include "archive.h"
 
+#define ENABLE_DESKTOP 1 // Enable bit 1 & 8 for unziping desktop archive (CM gapps, ...)
+
 enum {
 #if BB_BIG_ENDIAN
 	ZIP_FILEHEADER_MAGIC = 0x504b0304,
